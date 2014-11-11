@@ -46,18 +46,21 @@ Recognizing a human or animal activity is a skill that humans learn early in lif
 \end{abstract}
 
 \section{Introduction}
-% why problem important, how object information and use can help in recognizing an action
+% why problem important, how object information and affoirdance/ functionality can help in recognizing an action
 
 \section{Background}
 % what has been tried previously why this work interests us as roboticists who work on the table top environment.....
 
 \section{Dataset}
-We explored data sets with activity labels and corresponding skeletal trajectories. Humans frequently perform activities using objects, especially in table-top scenarios. The dataset from \cite{koppula2013detectingactivitiesrgbd} was constructed keeping this relationship in mind. The raw data consists of the RGB-D frames from the scenes of humans performing activities and human skeletal poses from the OpenNI NITE tracker \cite{PrimeSense2010}. The skeletal poses are not precise and come with confidence intervals. The labels on the data are related to both the objects present in the scene and the activities involved.	
+We explored data sets with activity labels and corresponding skeletal trajectories. Humans frequently perform activities using objects, especially in table-top scenarios. The dataset from \cite{koppula2013detectingactivitiesrgbd} was constructed keeping this relationship in mind. The raw data consists of the RGB-D frames from the scenes of humans performing activities and human skeletal poses from the OpenNI NITE tracker \cite{PrimeSense2010}. The skeletal poses are not precise and have confidence intervals. The labels on the data are related to both the objects present in the scene and the activities involved. Activity specific labels are framewise labels on subactivities	and the main activity being performed. The sub-activity labels are that of reaching, moving, pouring, eating, drinking, opening, placing, closing, scrubbing and null. The object specific labels consist of object location, object pose, object id and object affordance of the objects present in the scene. The object affordance lables are those of reachable, movable, pourable, pour to, containable, drinkable, openable, placeable, closable, scrubbable, scrubber and stationary. The dataset also has precomputed features that have relationship between objects and skeletal poses across frames. 
+For the experiments performed in this proposal we use only skeleton pose data, but for our next set of results we would use the pairwise relationship between objects and the skeleton data, and also the temporal features of data available.
 
-
-The data consisits of skeletal poses of human subjects performing activities, but along with this the dataset also has lables, positions and poses for all objects present in the scene. The activities present in the dataset are: cleaning, stacking objects, unstacking objects, eating, making cereal, taking medicine, microwaving food, arranging objects, taking food and picking objects. The activities themselves have been broken down into subactivities like placing, reaching, grabbing, which are labelled framewise.  
+%The data consisits of skeletal poses of human subjects performing activities, but along with this the dataset also has lables, positions and poses for all objects present in the scene. The activities present in the dataset are: cleaning, stacking objects, unstacking objects, eating, making cereal, taking medicine, microwaving food, arranging objects, taking food and picking objects. The activities themselves have been broken down into subactivities like placing, reaching, grabbing, which are labelled framewise. 
 
 \section{Methods}
+The data from \cite{koppula2013detectingactivitiesrgbd} has a lot of structure, temporal and within the frame relationships between objects and skeleton positions. The authors from \cite{koppula2013detectingactivitiesrgbd} modelled this structure using a pairwise graphical model as shown in 
+%Fig.~\ref{}. 
+As a baseline for our experiments we create a try to classify skeletal trajectories using a Bag of Words model \cite{Sivic03} with skeletal poses as features.
 
 
 
