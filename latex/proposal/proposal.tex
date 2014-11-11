@@ -46,16 +46,22 @@ Recognizing a human or animal activity is a skill that humans learn early in lif
 \end{abstract}
 
 \section{Introduction}
+% why problem important, how object information and use can help in recognizing an action
 
 \section{Background}
+% what has been tried previously why this work interests us as roboticists who work on the table top environment.....
 
 \section{Dataset}
-We explored data sets with activity labels and corresponding skeletal trajectories. Humans frequently perform activities using objects, especially in table-top scenarios. The dataset from \cite{koppula2013detectingactivitiesrgbd} was constructed keeping this relationship in mind. The data consisits of skeletal poses of human subjects performing activities, but along with this the dataset also has object lables, positions and poses, for all objects used. The activities present in the dataset are: cleaning, stacking objects, unstacking objects, eating, making cereal, taking medicine, microwaving food, arranging objects, taking food and picking objects. Along with activity labels we have sub-activity labels, which are latent and not visible in our model. 
+We explored data sets with activity labels and corresponding skeletal trajectories. Humans frequently perform activities using objects, especially in table-top scenarios. The dataset from \cite{koppula2013detectingactivitiesrgbd} was constructed keeping this relationship in mind. The raw data consists of the RGB-D frames from the scenes of humans performing activities and human skeletal poses from the OpenNI NITE tracker \cite{PrimeSense2010}. The skeletal poses are not precise and come with confidence intervals. The labels on the data are related to both the objects present in the scene and the activities involved.	
+
+
+The data consisits of skeletal poses of human subjects performing activities, but along with this the dataset also has lables, positions and poses for all objects present in the scene. The activities present in the dataset are: cleaning, stacking objects, unstacking objects, eating, making cereal, taking medicine, microwaving food, arranging objects, taking food and picking objects. The activities themselves have been broken down into subactivities like placing, reaching, grabbing, which are labelled framewise.  
 
 \section{Methods}
 
 
-\bibliography{ref.bib}
+
+\bibliography{ref}
 
 
 \end{document}
