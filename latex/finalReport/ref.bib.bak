@@ -1,33 +1,61 @@
-% This file was created with JabRef 2.8.1.
+% This file was created with JabRef 2.10b2.
 % Encoding: Cp1252
 
-@ARTICLE{koppula2013detectingactivitiesrgbd,
-  author = {Hema Koppula and Rudhir Gupta and Ashutosh Saxena},
-  title = {Learning Human Activities and Object Affordances from RGB-D Videos},
-  journal = {IJRR},
-  year = {2013}
+
+@InProceedings{gall2011functional,
+  Title                    = {Functional categorization of objects using real-time markerless motion capture},
+  Author                   = {Gall, Juergen and Fossati, Andrea and Van Gool, Luc},
+  Booktitle                = {Computer Vision and Pattern Recognition (CVPR), 2011 IEEE Conference on},
+  Year                     = {2011},
+  Organization             = {IEEE},
+  Pages                    = {1969--1976}
 }
 
-@INPROCEEDINGS{Sivic03,
-  author = {Sivic, J. and Zisserman, A.},
-  title = {{Video Google}: {A} Text Retrieval Approach to Object Matching in
-	Videos},
-  booktitle = {Proceedings of the International Conference on Computer Vision},
-  year = {2003}
+@Article{koppula2013detectingactivitiesrgbd,
+  Title                    = {Learning Human Activities and Object Affordances from RGB-D Videos},
+  Author                   = {Hema Koppula and Rudhir Gupta and Ashutosh Saxena},
+  Journal                  = {IJRR},
+  Year                     = {2013}
 }
 
-@INBOOK{sutton06introduction,
-  title = {Introduction to Conditional Random Fields for Relational Learning},
-  publisher = {MIT Press},
-  year = {2006},
-  editor = {Getoor, Lise and Taskar, Ben},
-  author = {Sutton, Charles and Mccallum, Andrew}
+@InProceedings{koppula2013anticipating,
+  Title                    = {Anticipating Human Activities using Object Affordances for Reactive Robotic Response.},
+  Author                   = {Koppula, Hema Swetha and Saxena, Ashutosh},
+  Booktitle                = {Robotics: Science and Systems},
+  Year                     = {2013}
 }
 
-@MANUAL{PrimeSense2010,
-  title = {Prime Sensor™ NITE 1.3 Algorithms notes},
-  organization = {PrimeSense Inc.},
-  year = {2010}
+@Manual{PrimeSense2010,
+  Title                    = {Prime Sensor™ NITE 1.3 Algorithms notes},
+  Author                   = {Prime Sense},
+  Organization             = {PrimeSense Inc.},
+  Year                     = {2010},
+
+  Url                      = {http://www.primesense.com}
+}
+
+@InProceedings{Sivic03,
+  Title                    = {{Video Google}: {A} Text Retrieval Approach to Object Matching in Videos},
+  Author                   = {Sivic, J. and Zisserman, A.},
+  Booktitle                = {Proceedings of the International Conference on Computer Vision},
+  Year                     = {2003}
+}
+
+@InProceedings{sung2012unstructured,
+  Title                    = {Unstructured human activity detection from rgbd images},
+  Author                   = {Sung, Jaeyong and Ponce, Colin and Selman, Bart and Saxena, Ashutosh},
+  Booktitle                = {Robotics and Automation (ICRA), 2012 IEEE International Conference on},
+  Year                     = {2012},
+  Organization             = {IEEE},
+  Pages                    = {842--849}
+}
+
+@InBook{sutton06introduction,
+  Title                    = {Introduction to Conditional Random Fields for Relational Learning},
+  Author                   = {Sutton, Charles and Mccallum, Andrew},
+  Editor                   = {Getoor, Lise and Taskar, Ben},
+  Publisher                = {MIT Press},
+  Year                     = {2006}
 }
 
 @comment{jabref-meta: selector_review:}
